@@ -1,0 +1,22 @@
+{
+  "SERVICE": {
+    "value": "general-data-service",
+    "type": "id"
+  },
+  "STATEFUL": {
+    "value": "general-data-set",
+    "type": "id"
+  },
+  "INTERNAL_HOST": {
+    "value": "general-data-service.microservices-namespace",
+    "type": "host"
+  },
+  "INTERNAL_PORT": {
+    "value": 27017,
+    "type": "port"
+  },
+  "INTERNAL_URL": {
+    "value": "general-data-service.microservices-namespace:27017",
+    "type": "url"
+  }
+}

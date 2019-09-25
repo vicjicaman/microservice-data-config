@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "microservice-config": {
+      "url": "github.com:vicjicaman/microservice-config.git",
+      "version": "1.70.1-master"
+    }
+  },
+  "config": [
+    {
+      "name": "SERVICE",
+      "value": "general-data-service",
+      "type": "id"
+    },
+    {
+      "name": "STATEFUL",
+      "value": "general-data-set",
+      "type": "id"
+    },
+    {
+      "name": "INTERNAL_HOST",
+      "value": "${SERVICE}.${NAMESPACE@microservice-config}",
+      "type": "host"
+    },
+    {
+      "name": "INTERNAL_PORT",
+      "value": 27017,
+      "type": "port"
+    },
+    {
+      "name": "INTERNAL_URL",
+      "value": "${INTERNAL_HOST}:${INTERNAL_PORT}",
+      "type": "url"
+    }
+  ]
+}
